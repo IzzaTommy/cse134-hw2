@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="description" content="CSE134B Site for Homeworks">
+    <meta name="author" content="Thomas Joel">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Thomas Joel's CSE134B Site</title>
+
+    <link rel="icon" type="image/x-icon" href="/images/favicon.ico">
+    <!-- no style yet -->
+    <style></style>
+</head>
+<body>
+    <main>
+        <header>
+            <h1>CSE 134B Site</h1>
+            <nav>
+                <ul>
+                    <li><a href="#aboutme">About Me</a></li>
+                    <li><a href="#projects">Projects</a></li>
+                    <li><a href="#skills">Skills</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                    <li><a href="#experiments">Experiments</a></li>
+                </ul>
+            </nav>
+        </header>
+
+        <hr>
+
+        <section id="aboutme">
+            <h2>About Me</h2>
+
+            <picture>
+                <source srcset="/images/portrait.webp">
+                <img src="/images/portrait.jpg" alt="Portrait of Thomas Joel">
+            </picture>
+
+            <p>Hi, I'm Thomas</p>
+            <p>I'm will be graduating from <strong>UCSD</strong> in 2024 with a degree in computer science.</p>
+            <p>I've developed an interest in web development technologies. In particular, I'm interested in creating websites that are accessible to a user's <em>personal</em> and <em>technological</em> needs.</p>
+        </section>
+
+        <hr>
+
+        <section id="projects">
+            <h2>Projects</h2>
+
+            <h3>CSE135 Website</h3>
+            <figure>
+                <img src="/images/CSE135_Website_Preview.jpg" alt="A preview of Thomas Joel's CSE135 Website.">
+                <figcaption>A website implementing a <b>REST API</b> for <i>collection</i> of user activity and data.</figcaption>
+            </figure>
+
+            <h3>RoommateHub</h3>
+            <figure>
+                <img src="/images/RoommateHub_Preview.webp" alt="A preview image of RoommateHub web application.">
+                <figcaption>A <b>web</b> application for <i>organizing</i> bills and responsibilities between living-mates.</figcaption>
+            </figure>
+        </section>
+
+        <hr>
+
+        <section id="skills">
+            <h2>Skills</h2>
+
+            <template id="row-template">
+                <tr>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                </tr>
+            </template>
+
+            <table>
+                <caption>Experience</caption>
+                <colgroup>
+                    <!-- Can add style to separate columns -->
+                    <col span="1"> <!-- Skill column -->
+                    <col span="1"> <!-- YOE column -->
+                    <col span="1"> <!-- Relevant Projects column -->
+                </colgroup>
+                <tr>
+                    <th>Skill</th>
+                    <th>Years of Experience</th>
+                    <th>Relevant Projects</th>
+                </tr>
+                <tr>
+                    <td><code>Java</code></td>
+                    <td>3 Years</td>
+                    <td>Data Structures Implementation</td>
+                </tr>
+                <tr>
+                    <td><code>C</code></td>
+                    <td>2 Years</td>
+                    <td>Data Structures Implementation, Poker Game</td>
+                </tr>
+                <tr>
+                    <td><code>C++</code></td>
+                    <td>2 Years</td>
+                    <td>GUI Application, NVIDIA GPU Monitoring Program</td>
+                </tr>
+                <tr>
+                    <td><code>Python</code></td>
+                    <td>2 Years</td>
+                    <td>Web Scraper, Infographic Generator</td>
+                </tr>
+                <tr>
+                    <td><code>HTML, CSS, JavaScript</code></td>
+                    <td>2 Years</td>
+                    <td>CSE135 Website, RoommateHub</td>
+                </tr>
+
+            </table>
+        </section>
+
+        <hr>
+
+        <section id="contact">
+            <h2>Contact</h2>
+
+            <form>
+                <label for="first-name">First Name</label><br>
+                <input type="text" id="first-name" name="first-name"><br>
+
+                <label for="last-name">Last Name</label><br>
+                <input type="text" id="last-name" name="last-name"><br>
+
+                <label for="country-choice">Country</label><br>
+                <input id="country-choice" name="country-choice" list="countries"><br>
+
+                <datalist id="countries">
+                    <option value="USA"></option>
+                    <option value="Canada"></option>
+                    <option value="Japan"></option>
+                </datalist>
+
+                <label for="occupation">Occupation</label><br>
+                <select id="occupation" name="occupation">
+                    <option value="">--Please select an option--</option>
+                    <optgroup label="Education">
+                        <option value="student">Student</option>
+                        <option value="teacher">Teacher</option>
+                    </optgroup>
+                    <optgroup label="Business">
+                        <option value="employer">Employer</option>
+                    </optgroup>
+                    <optgroup label="Other">
+                        <option value="other">Other</option>
+                    </optgroup>
+                </select>
+
+                <fieldset>
+                    <legend>Inquiry</legend>
+                    <input type="radio" id="business" name="inquiry">
+                    <label for="business">Business</label>
+                    <input type="radio" id="other" name="inquiry">
+                    <label for="other">Other</label>
+                </fieldset>
+
+                <label for="subject">Subject</label><br>
+                <textarea id="subject" name="subject" placeholder="Write something.." style="height:200px"></textarea><br>
+
+                <input type="submit" value="Submit">
+            </form>
+        </section>
+
+        <hr>
+
+        <section id="experiments">
+            <div>
+                <h2>Experiments</h2>
+
+                <h3>Audio, video, canvas, svg, aside, pre, ol, div</h3>
+                <audio src="mp/ok.ogg" controls></audio><br>
+                <video src="mp/random.mp4" width=500 controls></video><br>
+
+                <canvas></canvas><br>
+
+                <svg><rect width="100" height="100"/></svg>
+                
+                <pre>This text has     large     spaces.</pre>
+
+                <aside>The reason the large white space is read is because it is inside the <code>pre</code> tag, which preserves both spaces and line breaks</aside>
+
+                <p>Countries by GDP in 2022</p>
+                <ol>
+                    <li>USA</li>
+                    <li>China</li>
+                    <li>Japan</li>
+                    <li>Germany</li>
+                </ol>
+            </div>
+
+            <div>
+                <h3>Details, summary, iframe, button, span</h3>
+                <details>
+                    <summary>Lorem Ipsum</summary>
+                    <p><span style="color:blue">Lorem ipsum</span> dolor sit amet consectetur adipisicing elit. Quasi enim consectetur, officia quis error fugiat non harum incidunt ad accusantium maiores soluta voluptate, porro culpa vero quisquam quidem illum nostrum.</p>
+                </details>
+
+                <iframe src="https://en.wikipedia.org/wiki/Lorem_ipsum"></iframe><br>
+
+                <button>This button does nothing!</button>
+            </div>
+        </section>
+
+        <hr>
+
+        <footer>
+            <p>Author - Thomas Joel</p>
+            <a href="mailto:tjoel@ucsd.edu">tjoel@ucsd.edu</a>
+        </footer>
+    </main>
+
+    <script>
+        let canvas = document.getElementsByTagName("canvas")[0];
+        console.log(canvas)
+        let pen = canvas.getContext("2d");
+        pen.beginPath();
+        pen.rect(0, 20, 100, 100);
+        pen.stroke();
+    </script>
+</body>
+</html>
